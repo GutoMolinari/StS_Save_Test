@@ -12,6 +12,8 @@ namespace StS_Save_Test_UI
 			
 			btnDecode.Click += btnDecode_Click;
 			btnEncode.Click += btnEncode_Click;
+
+			btnCopyClipboard.Click += btnCopyClipboard_Click;
 		}
 
 		private void btnDecode_Click(object sender, EventArgs e)
@@ -21,16 +23,20 @@ namespace StS_Save_Test_UI
 							   : txtJsonField.Text
 							   ;
 
-			string jsonString = SaveDecoder.Decode(base64String);
-
-			txtJsonField.Text = jsonString;
+			txtJsonField.Text = SaveDecoder.Decode(base64String);
 		}
 
 		private void btnEncode_Click(object sender, EventArgs e)
 		{
-			string base64String = SaveDecoder.Encode(txtJsonField.Text);
+			txtJsonField.Text = SaveDecoder.Encode(txtJsonField.Text);
+		}
 
-			txtJsonField.Text = base64String;
+		private void btnCopyClipboard_Click(object sender, EventArgs e)
+		{
+			if (!string.IsNullOrWhiteSpace(txtJsonField.Text))
+			{
+				Clipboard.SetText(txtJsonField.Text);
+			}
 		}
 	}
 }
