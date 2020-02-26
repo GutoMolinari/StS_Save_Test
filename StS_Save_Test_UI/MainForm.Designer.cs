@@ -1,6 +1,6 @@
 ﻿namespace StS_Save_Test_UI
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
