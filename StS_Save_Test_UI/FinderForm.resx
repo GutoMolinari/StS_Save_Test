@@ -117,28 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACEAAAAeCAYAAACiyHcXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
-        TUUH4gYYBxwRBD3x0wAAAvtJREFUWEe1l01uGkEQhX2dmH+i2LlAfI54F++dXXwIxzkBe+xDsHNWSFwC
-        iR8hWIAETPwN8yZvasbAxk9qTfd09avXVV0Nc5EYdrtd1jtgv99nvTKwPWbPnMY8o60jF1G7/JS3bqed
-        NvV9Ljbm67XLwrtmo16YV7/TbuV9te12exDB4OHhV6p4MpmkooD3MQbT6TR9LpfLvA8YO5zLeRwSkosA
-        EM3n87QPqhav1+v0yZzPeyqAc2GnTTgqRQjuoGqxhAAcufAIFxq5GvVa8rnbOS3CHQofKuLcdAyHw6Td
-        aia/Hx+ztx+cDpzKWM2rofUmxqsBuCDfSIwqPGelI5bfy8tzgYwdI0TzMSIuIkaj1WykJVwQAbmXHQQi
-        dxuAnTvYbDYFO8SJC7uz08Ei3+V4PC4QA+0UYhcB+v1+bg8XQoD3HbI9mg4ZxRD74WWHLoYT73xRqHNx
-        uGkXvNQiFngkyNnd3Y9sVISEOhAk4b1eL+d6r4xlWzoTTozKm5tv2egAhRVSt1XORTwYDPJ5njGaoFKE
-        wCKajCI8vwjXAQSqJsGFRiFEmh+1kyK4AyKcLB5m1iBEcBHxcFbeE5GQMXMuUgIk1HF99SW1/Xl/X6gI
-        7zvEfTQSIF5WNBc6Go0Kl5Wa4ELPuqwEVGsxz7+vryUnahze+A5ynsAjIE5tAps0HbFEHb5jcHv7PXek
-        GtcYUDE+z/PP01PpLgFwy7YUCTf2vkLpu/HaV1/ENAmJAgTZvXsm3EHMpZMSSR8TfpHTJERwrk67nVZf
-        KR1efjEdToCtOwcx/xLCVU6FOODSfCEScVfelwCR4dCJXQAQF9xRrFApQmCRO4jpiHPuJEYvCvBIc1uS
-        rkoRONFid1gF7KJIF+Lrdc4kBL8nSzTCDyu2MQW+PnLFMVz4peWR8N+IxWKR/lMSGDtms1nWO6Bqt0Jc
-        u1qtsl6Sf52lIuLVjCB9snXfwuVzsRHO+M4//fxPsLj8kvt6fXUQIcTcRvhHLbbxI9fXH5sD/w9okvwD
-        ylboE5+faAsAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>

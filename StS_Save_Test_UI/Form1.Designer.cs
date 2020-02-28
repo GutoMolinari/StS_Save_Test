@@ -29,36 +29,49 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tlpWorkspace = new System.Windows.Forms.TableLayoutPanel();
-            this.btnDecode = new System.Windows.Forms.Button();
-            this.btnEncode = new System.Windows.Forms.Button();
-            this.txtJsonField = new System.Windows.Forms.TextBox();
-            this.btnCopyClipboard = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
+            this.btnCopyClipboard = new System.Windows.Forms.Button();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.btnEncode = new System.Windows.Forms.Button();
+            this.btnDecode = new System.Windows.Forms.Button();
+            this.tlpWorkspace = new System.Windows.Forms.TableLayoutPanel();
+            this.txtJsonField = new System.Windows.Forms.RichTextBox();
             this.tlpWorkspace.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tlpWorkspace
+            // btnCopyClipboard
             // 
-            this.tlpWorkspace.AllowDrop = true;
-            this.tlpWorkspace.AutoSize = true;
-            this.tlpWorkspace.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpWorkspace.ColumnCount = 3;
-            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpWorkspace.Controls.Add(this.btnDecode, 0, 0);
-            this.tlpWorkspace.Controls.Add(this.btnEncode, 2, 0);
-            this.tlpWorkspace.Controls.Add(this.txtJsonField, 0, 1);
-            this.tlpWorkspace.Controls.Add(this.btnCopyClipboard, 1, 0);
-            this.tlpWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpWorkspace.Location = new System.Drawing.Point(0, 0);
-            this.tlpWorkspace.Name = "tlpWorkspace";
-            this.tlpWorkspace.RowCount = 2;
-            this.tlpWorkspace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tlpWorkspace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpWorkspace.Size = new System.Drawing.Size(634, 681);
-            this.tlpWorkspace.TabIndex = 0;
+            this.btnCopyClipboard.AutoSize = true;
+            this.btnCopyClipboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCopyClipboard.Location = new System.Drawing.Point(245, 3);
+            this.btnCopyClipboard.Name = "btnCopyClipboard";
+            this.btnCopyClipboard.Size = new System.Drawing.Size(100, 29);
+            this.btnCopyClipboard.TabIndex = 3;
+            this.btnCopyClipboard.Text = "Copy to clipboard";
+            this.toolTips.SetToolTip(this.btnCopyClipboard, "Copy text to clipboard");
+            this.btnCopyClipboard.UseVisualStyleBackColor = true;
+            // 
+            // btnFind
+            // 
+            this.btnFind.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
+            this.btnFind.Location = new System.Drawing.Point(593, 3);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(38, 29);
+            this.btnFind.TabIndex = 4;
+            this.btnFind.UseVisualStyleBackColor = true;
+            // 
+            // btnEncode
+            // 
+            this.btnEncode.AutoSize = true;
+            this.btnEncode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEncode.Location = new System.Drawing.Point(351, 3);
+            this.btnEncode.Name = "btnEncode";
+            this.btnEncode.Size = new System.Drawing.Size(236, 29);
+            this.btnEncode.TabIndex = 1;
+            this.btnEncode.Text = "Encode";
+            this.btnEncode.UseVisualStyleBackColor = true;
             // 
             // btnDecode
             // 
@@ -66,49 +79,50 @@
             this.btnDecode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDecode.Location = new System.Drawing.Point(3, 3);
             this.btnDecode.Name = "btnDecode";
-            this.btnDecode.Size = new System.Drawing.Size(258, 29);
+            this.btnDecode.Size = new System.Drawing.Size(236, 29);
             this.btnDecode.TabIndex = 0;
             this.btnDecode.Text = "Decode";
             this.btnDecode.UseVisualStyleBackColor = true;
             // 
-            // btnEncode
+            // tlpWorkspace
             // 
-            this.btnEncode.AutoSize = true;
-            this.btnEncode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEncode.Location = new System.Drawing.Point(373, 3);
-            this.btnEncode.Name = "btnEncode";
-            this.btnEncode.Size = new System.Drawing.Size(258, 29);
-            this.btnEncode.TabIndex = 1;
-            this.btnEncode.Text = "Encode";
-            this.btnEncode.UseVisualStyleBackColor = true;
+            this.tlpWorkspace.AllowDrop = true;
+            this.tlpWorkspace.AutoSize = true;
+            this.tlpWorkspace.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpWorkspace.ColumnCount = 4;
+            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
+            this.tlpWorkspace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpWorkspace.Controls.Add(this.btnDecode, 0, 0);
+            this.tlpWorkspace.Controls.Add(this.btnEncode, 2, 0);
+            this.tlpWorkspace.Controls.Add(this.txtJsonField, 0, 1);
+            this.tlpWorkspace.Controls.Add(this.btnCopyClipboard, 1, 0);
+            this.tlpWorkspace.Controls.Add(this.btnFind, 3, 0);
+            this.tlpWorkspace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpWorkspace.Location = new System.Drawing.Point(0, 0);
+            this.tlpWorkspace.Name = "tlpWorkspace";
+            this.tlpWorkspace.RowCount = 2;
+            this.tlpWorkspace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tlpWorkspace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpWorkspace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpWorkspace.Size = new System.Drawing.Size(634, 681);
+            this.tlpWorkspace.TabIndex = 0;
             // 
             // txtJsonField
             // 
-            this.txtJsonField.AcceptsReturn = true;
+            this.txtJsonField.AcceptsTab = true;
             this.txtJsonField.AllowDrop = true;
-            this.tlpWorkspace.SetColumnSpan(this.txtJsonField, 3);
+            this.tlpWorkspace.SetColumnSpan(this.txtJsonField, 4);
             this.txtJsonField.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtJsonField.Font = new System.Drawing.Font("Consolas", 12F);
             this.txtJsonField.Location = new System.Drawing.Point(3, 38);
             this.txtJsonField.MaxLength = 0;
-            this.txtJsonField.Multiline = true;
             this.txtJsonField.Name = "txtJsonField";
-            this.txtJsonField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtJsonField.Size = new System.Drawing.Size(628, 640);
             this.txtJsonField.TabIndex = 2;
+            this.txtJsonField.Text = "";
             this.txtJsonField.WordWrap = false;
-            // 
-            // btnCopyClipboard
-            // 
-            this.btnCopyClipboard.AutoSize = true;
-            this.btnCopyClipboard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCopyClipboard.Location = new System.Drawing.Point(267, 3);
-            this.btnCopyClipboard.Name = "btnCopyClipboard";
-            this.btnCopyClipboard.Size = new System.Drawing.Size(100, 29);
-            this.btnCopyClipboard.TabIndex = 3;
-            this.btnCopyClipboard.Text = "Copy to clipboard";
-            this.toolTips.SetToolTip(this.btnCopyClipboard, "Copy text to clipboard");
-            this.btnCopyClipboard.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -130,13 +144,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tlpWorkspace;
-        private System.Windows.Forms.Button btnDecode;
-        private System.Windows.Forms.Button btnEncode;
-        private System.Windows.Forms.TextBox txtJsonField;
-        private System.Windows.Forms.Button btnCopyClipboard;
         private System.Windows.Forms.ToolTip toolTips;
+        private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.Button btnCopyClipboard;
+        private System.Windows.Forms.Button btnEncode;
+        private System.Windows.Forms.Button btnDecode;
+        private System.Windows.Forms.TableLayoutPanel tlpWorkspace;
+        public System.Windows.Forms.RichTextBox txtJsonField;
     }
 }
 

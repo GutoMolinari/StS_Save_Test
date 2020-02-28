@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 
+
 namespace StS_Save_Test_UI
 {
 	public partial class Form1 : Form
@@ -14,6 +15,8 @@ namespace StS_Save_Test_UI
 			btnEncode.Click += btnEncode_Click;
 
 			btnCopyClipboard.Click += btnCopyClipboard_Click;
+
+			btnFind.Click += btnFind_Click;
 		}
 
 		private void btnDecode_Click(object sender, EventArgs e)
@@ -37,6 +40,12 @@ namespace StS_Save_Test_UI
 			{
 				Clipboard.SetText(txtJsonField.Text);
 			}
+		}
+
+		private void btnFind_Click(object sender, EventArgs e)
+		{
+			FinderForm ff = new FinderForm();
+			ff.Show(this);
 		}
 	}
 }
